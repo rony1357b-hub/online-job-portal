@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard – Rony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <div id="pgb"></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a class="brand" href="index.html"><svg width="30" height="30" viewBox="0 0 30 30"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#c026d3"/></linearGradient></defs><rect width="30" height="30" rx="9" fill="url(#lg)"/><path d="M10 21V9h6a4 4 0 010 8h-6M16 17l4 4" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Rony</a>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Find Jobs</a>
+    <a href="companies.html">Companies</a>
+    <a href="dashboard.html" class="on">Dashboard</a>
+    <a href="applications.html">Applications</a>
+    <a href="post-job.html">Post a Job</a>
+    <a href="profile.html">Profile</a>
+    <span class="sp"></span>
+    <a class="tt" href="#" onclick="toggleTheme();return false" title="Toggle theme">◐</a>
+    <a href="login.html" class="btn" id="authBtn" style="color:#fff">Login / Sign up</a>
+  </nav>
+
+  <button id="up" aria-label="Back to top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <div id="toast"></div>
+
+  <!-- Page content -->
+  <main id="app">
+    <!-- Welcome banner -->
+    <div class="row dbn">
+      <img class="pf ring" src="images/profile-small.jpg" width="96" height="96" alt="Rony profile photo">
+      <div><h1 style="margin:0">Welcome back, <span id="welcome-name">Rony</span></h1><div class="mut">Here is your job search at a glance.</div></div>
+    </div>
+
+    <!-- Stat cards (js/dashboard.js) -->
+    <div class="grid g4" id="dash-stats"></div>
+
+    <div class="grid g2" style="margin:16px 0;grid-template-columns:2fr 1fr">
+      <div class="card"><h2>Applications this week</h2><svg id="chart" viewBox="0 0 350 160" width="100%"></svg></div>
+      <div class="card"><h2>Profile strength</h2><div class="stat">78%</div><div class="bar"><i style="width:78%"></i></div>
+        <p class="mut">Add a portfolio link and 2 skills to reach 100%.</p><a class="btn o" href="profile.html">Improve profile</a></div>
+    </div>
+
+    <div class="grid g2">
+      <div class="card"><h2>Recommended for you</h2><div class="grid" id="recommended"></div></div>
+      <div class="card"><h2>Recent activity</h2>
+        <div class="row" style="padding:10px 0;border-bottom:1px solid var(--bd)"><span style="width:10px;height:10px;border-radius:50%;background:var(--pri)"></span><div style="flex:1">Interview scheduled with Nimbus Labs</div><span class="mut">Today</span></div>
+        <div class="row" style="padding:10px 0;border-bottom:1px solid var(--bd)"><span style="width:10px;height:10px;border-radius:50%;background:var(--pri)"></span><div style="flex:1">Offer received from PeopleFirst</div><span class="mut">2 days ago</span></div>
+        <div class="row" style="padding:10px 0;border-bottom:1px solid var(--bd)"><span style="width:10px;height:10px;border-radius:50%;background:var(--pri)"></span><div style="flex:1">Your application was viewed by Insightly</div><span class="mut">3 days ago</span></div>
+        <div class="row" style="padding:10px 0;border-bottom:1px solid var(--bd)"><span style="width:10px;height:10px;border-radius:50%;background:var(--pri)"></span><div style="flex:1">Saved Product Manager at Orbit Pay</div><span class="mut">5 days ago</span></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="ft">
+    <div><b style="font-size:18px;color:var(--pri)">Rony</b><p>A modern job portal connecting talented people with great companies.</p></div>
+    <div><h4>Candidates</h4><a href="jobs.html">Find jobs</a><a href="companies.html">Companies</a><a href="dashboard.html">Dashboard</a></div>
+    <div><h4>Employers</h4><a href="post-job.html">Post a job</a><a href="applications.html">Applicants</a></div>
+    <div><h4>Account</h4><a href="profile.html">Profile</a><a href="login.html">Login / Sign up</a></div>
+  </div>
+  <div class="cp">© 2026 Rony · All rights reserved</div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

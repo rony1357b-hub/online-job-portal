@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Profile – Rony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <div id="pgb"></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a class="brand" href="index.html"><svg width="30" height="30" viewBox="0 0 30 30"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#c026d3"/></linearGradient></defs><rect width="30" height="30" rx="9" fill="url(#lg)"/><path d="M10 21V9h6a4 4 0 010 8h-6M16 17l4 4" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Rony</a>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Find Jobs</a>
+    <a href="companies.html">Companies</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="applications.html">Applications</a>
+    <a href="post-job.html">Post a Job</a>
+    <a href="profile.html" class="on">Profile</a>
+    <span class="sp"></span>
+    <a class="tt" href="#" onclick="toggleTheme();return false" title="Toggle theme">◐</a>
+    <a href="login.html" class="btn" id="authBtn" style="color:#fff">Login / Sign up</a>
+  </nav>
+
+  <button id="up" aria-label="Back to top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <div id="toast"></div>
+
+  <!-- Page content -->
+  <main id="app">
+    <!-- Cover -->
+    <div class="pcover"><div class="pc-in">
+      <img class="pbig" src="images/profile.jpg" alt="Rony">
+      <div class="pinfo">
+        <span class="tag ok">● Open to work</span>
+        <h1 id="pname">Rony</h1>
+        <div class="pr">Frontend Developer · Kurnool, India</div>
+        <div class="row"><button class="btn" id="dlResume">Download resume</button><button class="btn o" id="contactBtn">Contact me</button></div>
+      </div>
+    </div></div>
+
+    <div class="grid g4" style="margin:18px 0">
+      <div class="card"><div class="stat" style="color:#4f46e5">248</div><div class="mut">Profile views</div></div>
+      <div class="card"><div class="stat" style="color:#db2777">24</div><div class="mut">Applications</div></div>
+      <div class="card"><div class="stat" style="color:#0891b2">3</div><div class="mut">Interviews</div></div>
+      <div class="card"><div class="stat" style="color:#ea580c">512</div><div class="mut">Connections</div></div>
+    </div>
+
+    <div class="grid g2" style="grid-template-columns:2fr 1fr">
+      <div class="grid">
+        <div class="card"><h2>About</h2><p>Passionate developer with 3 years of experience building fast, accessible and beautiful web apps. I love turning ideas into polished products and I am looking for a product-focused team.</p></div>
+        <div class="card"><h2>Experience</h2><div class="tl">
+          <div><b>Frontend Developer</b><div class="mut">WebWorks · 2023 – Present</div><div>Built dashboards and design systems used by 40K users.</div></div>
+          <div><b>Junior Developer</b><div class="mut">CodeNest · 2021 – 2023</div><div>Shipped responsive websites for 15+ clients.</div></div>
+        </div></div>
+        <div class="card"><h2>Education</h2><b>B.Tech, Computer Science</b><div class="mut">2017 – 2021</div></div>
+      </div>
+      <div class="grid">
+        <div class="card"><h2>Skills</h2>
+        <div class="sk"><div><span>HTML &amp; CSS</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div></div>
+        <div class="sk"><div><span>JavaScript</span><span>88%</span></div><div class="bar"><i style="width:88%"></i></div></div>
+        <div class="sk"><div><span>React</span><span>82%</span></div><div class="bar"><i style="width:82%"></i></div></div>
+        <div class="sk"><div><span>UI Design</span><span>76%</span></div><div class="bar"><i style="width:76%"></i></div></div>
+        <div class="sk"><div><span>Node.js</span><span>70%</span></div><div class="bar"><i style="width:70%"></i></div></div>
+        </div>
+        <div class="card"><h2>Contact</h2><p>✉ rony@example.com<br>📍 Kurnool, Andhra Pradesh<br>🔗 github.com/rony</p></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="ft">
+    <div><b style="font-size:18px;color:var(--pri)">Rony</b><p>A modern job portal connecting talented people with great companies.</p></div>
+    <div><h4>Candidates</h4><a href="jobs.html">Find jobs</a><a href="companies.html">Companies</a><a href="dashboard.html">Dashboard</a></div>
+    <div><h4>Employers</h4><a href="post-job.html">Post a job</a><a href="applications.html">Applicants</a></div>
+    <div><h4>Account</h4><a href="profile.html">Profile</a><a href="login.html">Login / Sign up</a></div>
+  </div>
+  <div class="cp">© 2026 Rony · All rights reserved</div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
